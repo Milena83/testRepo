@@ -11,11 +11,13 @@
 form {
     width: 80vw;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: calc(1em + 1vw);
 }
 
 label {
     cursor: pointer;
+
+    
 }
 
 input {
@@ -23,12 +25,6 @@ input {
     margin-bottom: 20px;
 }
 
-
-
-input:active label {
-    color: azure;
-    background-color:wheat;
-}
 
 .img {
     display: none;
