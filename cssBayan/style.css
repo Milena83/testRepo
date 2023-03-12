@@ -1,0 +1,79 @@
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+    }
+
+
+form {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    appearance: none;
+    margin-bottom: 40px;
+}
+
+
+
+input:active label {
+    color: azure;
+    background-color:wheat;
+}
+
+.img {
+    display: none;
+    max-width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 30px auto 30px;
+    opacity: 0;
+    transition: all 1s;
+
+}
+input:checked + label > .img {
+    display: block;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+}
+
+
+input:checked + label {
+    color: blue;
+    transition: all 0.5s;
+}
+
+
+.icon {
+   float: right;
+   margin-top: 17px;
+   
+}
+
+input:checked + label > .icon {
+    transform: rotate(-45deg);
+    transition: all 1s;
+}
+
+
+@media (width > 820px) {
+
+    form:hover label {
+        color: black;
+    }
+
+    input:hover + label > .img {
+        display: block;
+        animation: show 3s 1;
+        animation-fill-mode: forwards;
+    }
+}
+
