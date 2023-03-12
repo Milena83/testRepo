@@ -76,5 +76,8 @@ input:checked + label > .wrap > .icon {
         transform: rotate(-45deg);
         transition: all 1s;
     }
+    label:active {
+        opacity: 0.3;
+    }
 }
 
